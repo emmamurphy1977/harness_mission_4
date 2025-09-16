@@ -1,0 +1,14 @@
+inputSet:
+  name: Test
+  identifier: Test
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Simple_Pipeline
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
